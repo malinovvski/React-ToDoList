@@ -3,7 +3,7 @@ import FilterList from "../components/FilterList";
 import TaskInput from "../components/TaskInput";
 import TaskList from "../components/TaskList";
 
-
+let idCounter = 0;
 
 export default function TodoPage() {
 
@@ -11,14 +11,16 @@ export default function TodoPage() {
 
     const addNewTask = (NewTask) => {
         setTasks((prevTasks) => [...prevTasks, {
+            id: idCounter++,
             label: NewTask,
             isChecked: false
         }])
     }
 
-    const completeTask = (isChecked, label) => {
-        setTasks((prevTasks) => prevTasks.map((prevTask) =>
-            prevTask.label === label ? { label, isChecked } : prevTask))
+    const completeTask = (isChecked, id) => {
+        setTasks((prevTasks) =>
+            prevTasks.map((prevTask) =>
+                prevTask.id === id ? { id, label: prevTask.label, isChecked } : prevTask))
     }
 
     return (

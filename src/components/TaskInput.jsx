@@ -15,7 +15,7 @@ export default function TaskInput(props) {
                 placeholder="Type task..."
                 value={userInput}
                 onChange={(event) => setUserInput(event.target.value)}></input>
-            <button onClick={addTask}>Add</button>
+            <button disabled={userInput === ""} onClick={addTask}>Add</button>
         </div>
     )
 }

@@ -5,8 +5,8 @@ export default function TaskList(props) {
     return (
 
         <ul>
-            {tasks.map(({ label, isChecked }) =>
-                <TaskItem key={label} label={label} isChecked={isChecked} completeTask={completeTask} />)}
+            {tasks.map(({ id, label, isChecked }) =>
+                <TaskItem id={id} key={id} label={label} isChecked={isChecked} completeTask={completeTask} />)}
 
 
         </ul>
