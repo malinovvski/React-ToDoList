@@ -5,11 +5,12 @@ import TodoPage from './pages/TodoPage';
 function App() {
   return (
     <div className="App">
+      <div className="container">
+        <h1>Todo App</h1>
 
-      <TodoPage />
+        <TodoPage />
 
-
-
+      </div>
     </div>
   );
 }

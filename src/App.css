@@ -1,1 +1,72 @@
 .App {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 34, 56);
+}
+
+.container {
+    height: 700px;
+    width: 700px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.inputbox {
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    height: 60px;
+    margin: 5px 70px;
+}
+
+.inputbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 60%;
+    margin: -5px 140px;
+}
+
+#filter {
+    list-style: none inside;
+    display: flex;
+    margin: 15px 15px;
+    padding: 5px 15px;
+}
+
+ul {
+    font-size: 25px;
+    text-align: center;
+    list-style: none inside;
+    border: 1px solid black;
+}
+
+checkbox {
+    color: red;
+
+}

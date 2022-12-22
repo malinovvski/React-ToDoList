@@ -12,10 +12,11 @@ export default function TaskInput(props) {
     return (
         <div>
             <input type="text"
+                className="inputbox"
                 placeholder="Type task..."
                 value={userInput}
                 onChange={(event) => setUserInput(event.target.value)}></input>
-            <button disabled={userInput === ""} onClick={addTask}>Add</button>
+            <button className="inputbutton" disabled={userInput === ""} onClick={addTask}>Add</button>
         </div>
     )
 }

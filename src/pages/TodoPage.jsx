@@ -26,8 +26,9 @@ export default function TodoPage() {
     return (
         <div>
             <TaskInput onNewTask={addNewTask} />
-            <TaskList tasks={tasks} completeTask={completeTask} />
             <FilterList />
+            <TaskList tasks={tasks} completeTask={completeTask} />
+
 
         </div>
     )
